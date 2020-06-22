@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <script src="JavaScriptFile.js"></script>
+    <style>li{margin-bottom: 10px;}</style>
+</head>
+<body>
+    <div>
+        <p id="demo">Some text</p>
+        <button onclick="toCelsium77()">77 toCelsium</button>
+        <p id="demo2"></p>
+        <button onclick="document.getElementById('demo2').innerHTML=toCelsium">Function definition to display</button>
+        <p onclick="this.innerHTML='Is x same as y? Hover on me!'"
+            onmouseover="this.innerHTML=(x===y)+' Click'">Is x same as y? Hover on me!</p>
+        <button onclick="this.innerHTML=car.carInfo()">Car information</button>
+    </div>
+    <div>
+        <p id="word">Averylongword</p>
+        <p id="getit"></p>
+        <button onclick="getIt()">Get that word!</button>
+        <p>There are 3 methods for extracting a part of a string:
+            <ul>
+                <li><button onclick="slice()">slice(start, end)(2, 7)</button></li>
+                <li><button onclick="substring()">substring(start, end)(8, 12)</button></li>
+                <li><button onclick="substr()">substr(start, length)(0, 3)</button></li>
+            </ul>
+            <p id="extract"></p>
+        </p>
+    </div>
+    <div class='image'>
+        <p>How do you remove a parent div in JavaScript if all the
+        ids and classes are the same for all child elements?</p>
+        <button class='remove'>X</button>
+    </div>
+    <div class='image'>
+        <p><img src=' ' alt='image'/></p>
+        <button class='remove'>X</button>
+    </div>
+    <div class='image'>
+        <p>Some third div</p>
+        <button class='remove'>X</button>
+    </div>
+
+
+<script>
+    var xs = 3;
+    var foo = {
+        xs:2,
+        baz: {
+            xs:1,
+            bar: function(){
+                return this.xs;
+            }
+        }
+    }
+    var go = foo.baz.bar;
+    console.log("go is "+ go());
+    console.log("foo.baz.bar is "+ foo.baz.bar());
+    var word = document.getElementById("word").textContent;
+    function slice() {
+        document.getElementById("extract").innerHTML=word.slice(2, 7);
+    };
+    console.log(word.charAt(3));
+    function substring() {
+        document.getElementById("extract").innerHTML=word.substring(8, 12);
+    };
+    function substr() {
+        document.getElementById("extract").innerHTML=word.substr(0, 3);
+    };
+    function getIt() {
+        document.getElementById("getit").innerHTML=word;
+    }
+    let z = Math.sqrt(9);
+    console.log("1"- -"1");
+
+//    alert(z);
+
+    // let buttons = document.getElementsByClassName("remove");
+    // for (const button of buttons) {
+    //     button.addEventListener('click', function () {
+    //         button.parentNode.style.display = "none";
+    //     });
+    // }
+    const arr = document.getElementsByClassName('remove');
+    for (const e of arr){
+        e.addEventListener('click', function() {
+            e.parentNode.remove(); //or e.parentNode.style.display = "none";
+        });
+    }
+
+</script>
+</body>
+</html>

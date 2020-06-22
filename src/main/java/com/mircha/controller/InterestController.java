@@ -83,9 +83,6 @@ public class InterestController {
 	}
 //
 //		return "redirect:/mvc/persons";
-//
-//	}
-	
 //	@RequestMapping("/remove/{id}")
 //    public String removePerson(@PathVariable("id") int id){
 //
