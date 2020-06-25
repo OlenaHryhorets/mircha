@@ -49,7 +49,7 @@ obj.getA().getB();
 Array.prototype.print = function() {
     console.log(this.toString());
 }
-const arrToPrint = [1, 2, 3].print();
+const arrToPrint = [1, 2, 3].print(); //1,2,3
 
 //inheriting and call parent function
 //With call(), an object can use a method belonging to another object
@@ -86,7 +86,7 @@ const objectT = {
 };
 const clone = JSON.parse(JSON.stringify(objectT));
 clone.a.b.c = 2;
-console.log(objectT.a.b.c);
+console.log("Value of the first object is " + objectT.a.b.c);
 
 // set to the object new properties
 const deFobj = {
@@ -101,7 +101,7 @@ console.log(deFobj.site);
 console.log(deFobj);
 
 console.log("___________________________________");
-console.log([]+3+null);
+console.log([]+3+null); //3null
 console.log(!{});  //false
 console.log(!{a:1});  //false
 let someValue = x;
@@ -117,7 +117,7 @@ function dateToYMD(date) {
 
 console.log(dateToYMD(new Date("12/31/2014")));
 
-//
+//check if empty array or value is undefined
 function ensure(value) {
     let args = Array.from(arguments);
     if (args.length == 0 || args[0] == undefined) {
@@ -132,18 +132,18 @@ try {
     console.log(err);
 }
 console.log("___________________________________");
-var xs = 3;
-var foo = {
-    xs:2,
+let xs = 3;
+let foo = {
+    xs: 2,
     baz: {
-        xs:1,
-        bar: function(){
+        xs: 1,
+        bar: function () {
             return this.xs;
         }
     }
-}
-var go = foo.baz.bar;
-console.log(go()); //in html is 3
+};
+let go = foo.baz.bar;
+console.log(go()); //in html is 3, because of 'this' witch will refer to global object value and xs = 3
 console.log(foo.baz.bar()); //1
 
 

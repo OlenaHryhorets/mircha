@@ -12,3 +12,14 @@
 //     The typeof operator allows us to see which type is stored in a variable.
 //
 //     Two forms: typeof x or typeof(x)
+var x = {};//create empty object
+x.p1 = "xp1";
+x.p2 = "xp2";
+//console.log(x);
+
+//null and undefined
+//console.log(i); //i is not defined
+var u;
+console.log(u)//u is undefined
+var n = null;
+console.log(n);
