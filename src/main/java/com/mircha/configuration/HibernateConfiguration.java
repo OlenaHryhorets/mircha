@@ -37,7 +37,7 @@ public class HibernateConfiguration {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/mircha");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/mircha?serverTimezone=UTC");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         return dataSource;
@@ -45,8 +45,9 @@ public class HibernateConfiguration {
     
     private Properties hibernateProperties() {
         Properties properties = new Properties();
-        properties.put("hibernate.format_sql", "update");
-        return properties;        
+        properties.put("hibernate.hbm2ddl.auto", "create");
+        properties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
+        return properties;
     }
     
 	  @Bean

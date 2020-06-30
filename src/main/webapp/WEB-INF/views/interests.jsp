@@ -145,7 +145,7 @@
                 <%--<a href="#" class="prev">Prev</a>--%>
                 <%--<a href="#" class="next">Next</a>--%>
             <%--</div>--%>
-            <%--<p>TODO some text</p>--%>
+            <%--<p>some text</p>--%>
         </div>
     </div>
     <div id="tabs-2" class="ui-tabs-panel">

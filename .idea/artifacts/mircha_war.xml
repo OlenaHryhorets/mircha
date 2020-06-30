@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mircha:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>mircha</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mircha.war">
+      <element id="artifact" artifact-name="mircha:war exploded" />
+    </root>
+  </artifact>
+</component>

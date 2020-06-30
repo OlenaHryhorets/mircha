@@ -68,6 +68,8 @@ const arraya = ['a'];
 arraya.forEach(function() {
     console.log(this);
 });
+
+
 async function print(n) {
     // Wait 1 second before printing 0, 0.9 seconds before printing 1, etc.
     await new Promise(resolve => setTimeout(() => resolve(), 10000 - n * 100));
