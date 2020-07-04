@@ -5,6 +5,17 @@
 </head>
 <body>
     <h3>Some page</h3>
+    <p>
+        You have viewed this page
+        <span id="count">an untold number of</span>
+        time(s).
+    </p>
+    <script>
+        if (!localStorage.pageLoadCount)
+            localStorage.pageLoadCount = 0;
+        localStorage.pageLoadCount = parseInt(localStorage.pageLoadCount) + 1;
+        document.getElementById('count').textContent = localStorage.pageLoadCount;
+    </script>
 <script>
     alert("It's some alert pop up");
     confirm("It's confirm pop up!");

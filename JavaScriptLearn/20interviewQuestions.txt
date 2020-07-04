@@ -1,0 +1,65 @@
+1.What is importance of DOCTYPE in HTML
+    Doctype tells the browser which version of HTML standart is used and how to render the page
+2.Difference between display:none and visibility:hidden
+    display:none   removes the element from the flow allowing other elements to fill in
+    visibility:hidden   only hides the element but space is allocated fot it on the page
+3.CSS "em"units what means?
+    "em" units represent percentage of its parent
+4.What is the difference between localStorage and sessionStorage
+    They both extend Storage. There is no difference between them except for the data stored in sessionStorage are
+    localStorage persists
+    until explicitly deleted. Changes made are saved in a localStorage and available for all current and future visits
+    to the site. Sites can add data to the session storage, and it will be accessible to any page
+    from the same site opened in that window
+5.
+6.
+7.
+8.
+9.New features of HTML5 standart:
+      Added new semantic elements:
+  <nav> <article> <section> <header> <footer> <aside>
+      Added new form controls:
+  <calendar> <date> <time> <email> <url> <search>
+      In addition better support for embedded media using:
+  <audio> <video> <canvas>
+
+10.What is a CSS preprocessor?
+     It is a tool which allows you to create CSS code much faster in a
+     more structured manner
+     LESS SASS ... it's a syntax sugar, the main advantages of which are:
+     code readability, structuring and improving performance by adding
+     variables, mixins, operators
+11.What is microdata?
+    Microdata is a set of additional HTML tags for specifying thr additional semantic
+    information to help search engines read your site properly
+12.What tags are used to make a table?
+    <table> for wrapping a table
+    <th> represents table heading
+    <tr> create a table row that store data elements
+    <td> represents column in a row
+13.What is the CSS Box Model?
+    It represents a structured way to space elements in relationship to each other.
+    made of:
+    margins, borders, paddings and content
+    When the page is being rendered, browser shows each of the elements as a
+    rectangular which can be styled using CSS
+14.Overriding styles
+    !important - override every other selectors, including inline added into a tag
+    (exclamation point important)
+15.What is the reason for wrapping the entire content of JavaScript source file in a function?
+    This is one of the best practice which creates a private namespace and thereby helps avoid
+     potential name conflicts between different JS functions
+16.How would you inspect a hover state of an element in the devtools?
+    click on :hov in styles inspector in DevTools
+17.How would you an HTML in the devtools?
+    right click "edit as HTML" enter
+18.What is the difference between "==" and "===" operators
+    types must be the same
+19.What kind of loops are in JS?
+    for
+    for/in
+    for/of
+    forEach
+    while
+    do/while
+20."use strict" what for?

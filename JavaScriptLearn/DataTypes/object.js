@@ -31,3 +31,20 @@ console.log(person);
 //
 // The delete keyword does not delete inherited properties, but if you delete a
 // prototype property, it will affect all objects inherited from the prototype.
+
+//Objects getter and setter:
+let person3 = {
+    name: "Sam",
+    surname: "Dou",
+    age: 23,
+    language: "no",
+    get lang() {
+        return this.language;
+    },
+    set lang(value) {
+        this.language = value;
+    }
+};
+person3.lang = "English";
+//document.getElementById("demo").innerHTML = person.lang;
+console.log(person3.lang);
