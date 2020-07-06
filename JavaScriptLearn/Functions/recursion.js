@@ -20,6 +20,7 @@ let add = function (i) {
 }
 console.log(add(11000));// 13000 will give RangeError: Maximum call stack size exceeded
 //Conclusion is that avoid recursions in your code as possible
+
 class X{
     get Y(){return 42;}
 }

@@ -1,0 +1,47 @@
+Data structures allow you to perform 4 main types of actions: access, search, insert and delete.
+I note that data structures can be good in one of the actions, but bad in the other.
+
+                         Access      Search       Insert      Delete
+--------------------------------------------------------------------------------------------------------------------------------------
+Array                     O(1)        O(N)        O(N)         O(N)
+Linked List               O(N)        O(N)        O(1)         O(1)
+Binary search tree        O(log N)    O(log N)    O(log N)     O(log N)
+
+Name           Notation     Estimate    N = 5            10             20             30
+--------------------------------------------------------------------------------------------------------------------------------------
+Constant       O(1)         ОХРЕНЕННО!!     1            1              1              1
+Logarithmic    O(log N)     КРУТО!          2.3219...    3.3219...      4.3219...      4.9068...
+Linear         O(N)         НОРМАС.         5            10             20             30
+Linear
+logarithmic    O(N log N)   БЛИИИН...       11.609...    33.219...      84.638...      147.204...
+Polynomial     O(N ^ 2)     ОТСТОЙ          25           100            400            900
+Exponential    O(2 ^ N)     ОТВРАТИТЕЛЬНО   32           1024           1,048,576      1,073,741,824
+Factorial      O(N!)        ТВОЮЖМАТЬ       120          3,628,800      2,432,902,0... 265,252,859,812,191,058,636,308,480,000,000
+--------------------------------------------------------------------------------------------------------------------------------------
+"O" characterizes two main quantities:
+Estimated execution time - the total number of operations that the algorithm will perform on a given data set.
+Volume estimation - is the total amount of memory required by an algorithm to process a given data set.
+
+Searching algorythms:
+- linear(go one by one and out of the loop when find it)
+- binary(first sort, then go to the center and compare, and take right or left side depending in which can it be)
+- jump search
+- Fibonacci search (using Fibonacci numbers)
+- exponential
+...
+Sorting algorythms:
+-quick sort(each element comparing with el in center and if it less go to the new left arr or greater - goes in right arr,
+and then after comparing all elements, create new array which consist of sort(leftArr), centerElement, sort(rightArr))
+-heap sort(take the biggest el from unsorted part, and put it to the sorted part)
+-merge sort
+
+Data structures:
+-Array
+-Linked List
+-Binary Tree (element in BT can have only 2 children)
+-Queue(FIFO)
+-Stack(LIFO)
+-Heap(complete binary tree)
+-Graph
+-Matrix(collection with rows and columns)
+

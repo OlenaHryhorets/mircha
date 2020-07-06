@@ -72,7 +72,7 @@ arraya.forEach(function() {
 
 async function print(n) {
     // Wait 1 second before printing 0, 0.9 seconds before printing 1, etc.
-    await new Promise(resolve => setTimeout(() => resolve(), 10000 - n * 100));
+    await new Promise(resolve => setTimeout(() => resolve(), 1000 - n * 100));
     // Will usually print 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 but order is not strictly
     // guaranteed.
     console.log(n);

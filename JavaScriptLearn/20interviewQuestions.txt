@@ -7,14 +7,16 @@
     "em" units represent percentage of its parent
 4.What is the difference between localStorage and sessionStorage
     They both extend Storage. There is no difference between them except for the data stored in sessionStorage are
-    localStorage persists
-    until explicitly deleted. Changes made are saved in a localStorage and available for all current and future visits
-    to the site. Sites can add data to the session storage, and it will be accessible to any page
-    from the same site opened in that window
-5.
-6.
-7.
-8.
+    available only when the browser tab is opened but data stored in localStorage persists until explicitly deleted.
+    Changes saved in a localStorage are available for all current and future visits to the site.
+5.What are data attributes?
+    Data attributes are used to store custom data directly inside HTML tags. They are easily accessible from CSS and JS
+6.Sprites
+    CSS sprite is merging multiple images into a single image. It reduces the amount of WEB-requests and increases page speed
+7.SVG
+    stands for Scalable Vector Graphics it is used to show vector graphics on the page.The biggest benefit is that
+    SVG-images don't lose quality when zoomed or resized
+8.CSS selectors for ids, classes, first child
 9.New features of HTML5 standart:
       Added new semantic elements:
   <nav> <article> <section> <header> <footer> <aside>
@@ -63,3 +65,34 @@
     while
     do/while
 20."use strict" what for?
+    Defines that JavaScript code should be executed in "strict mode"
+    The this keyword refers to the object that called the function.
+    If the object is not specified, functions in strict mode will return undefined and
+    functions in normal mode will return the global object (window)
+21.What is Responsive Web Design?
+    Responsive web design is about creating web sites which automatically adjust themselves to
+    look good on all devices, from small phones to large desktops.
+22.What is BOOTSTRAP?
+    Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive,
+    mobile-first websites. Bootstrap is completely free to download
+23.Features
+
+ECMAScript 5 (released in 2009):            ES6 ECMAScript 6 ( 2015):
+
+    "use strict"                            JavaScript let
+    String.trim()                           JavaScript const
+    Array.isArray()                         JavaScript Arrow Functions
+    Array.forEach()                         JavaScript Classes
+    Array.map()                             Default parameter values
+    Array.filter()                          Array.find()
+    Array.reduce()                          Array.findIndex()
+    Array.reduceRight()                     Exponentiation (**) (the same result as Math.pow(x,y))
+    Array.every()                           New Number properties (EPSILON, MIN_SAFE_INTEGER, MAX_SAFE_INTEGER)
+    Array.some()                            New Number methods (Number.isInteger(), Number.isSafeInteger())
+    Array.indexOf()                         New global number methods: isFinite() and isNaN()
+    Array.lastIndexOf()
+    JSON.parse()
+    JSON.stringify()
+    Date.now()
+    Property Getters and Setters
+    New Object Property Methods

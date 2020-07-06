@@ -8,8 +8,8 @@
 //   });
 //    Promise constructor takes a single argument, a callback,
 //    also known as executor function which takes two callbacks, resolve and reject
-//A promise can be resolved or rejected only once!
-// const promise = new Promise((resolve, reject) => {
+//  A promise can be resolved or rejected only once!
+//  const promise = new Promise((resolve, reject) => {
 //     const randomNumber = Math.random();
 //     setTimeout(() => {
 //         if(randomNumber < .6) {
@@ -22,8 +22,8 @@
 // console.dir(promise);
 // setTimeout(() => {console.dir(promise)}, 1000);
 
-//How to consume an already created promise:
-//we consume a promise by calling then() and catch() methods on the promise:
+//  How to consume an already created promise:
+//  we consume a promise by calling then() and catch() methods on the promise:
 
 //      .then() syntax: promise.then(successCallback, failureCallback)
 const promiseT = new Promise((resolve, reject) => {
