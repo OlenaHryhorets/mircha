@@ -1,4 +1,4 @@
-//text training:
+// training:
 // merge two arrays with sorting
 
 const ab = [ 1, 2, 3, 4, 7, 12 ];
